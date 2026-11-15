@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a1a1a">
+<title>RA PUSAKA – Galeri Keris</title>
+<meta name="description" content="Koleksi keris pusaka Nusantara lengkap dengan dhapur, luk, tangguh, dan pamor. Pesan langsung lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#beranda" class="logo">RA PUSAKA</a>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#koleksi">Koleksi</a>
+    <a href="istilah.html">Istilah</a>
+    <a href="cara-pesan.html">Cara Pesan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<main>
+<section id="beranda" class="hero">
+  <div class="hero-teks">
+    <h1>Koleksi Keris Pusaka Nusantara</h1>
+    <p>Keris pilihan dengan keterangan dhapur, luk, tangguh, dan pamor yang jelas. Lihat koleksi, lalu tanyakan langsung ke penjual lewat WhatsApp.</p>
+    <a href="#koleksi" class="btn-utama">Lihat Koleksi</a>
+  </div>
+  <img class="hero-gambar" src="images/RA-PUSAKA.jpeg" alt="Ilustrasi keris luk 9">
+</section>
+
+<section id="koleksi" class="seksi">
+  <h2>Koleksi</h2>
+  <div id="filter" class="filter" aria-label="Filter berdasarkan luk"></div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section class="seksi gelap">
+  <h2>Baru mengenal keris?</h2>
+  <div class="pintasan">
+    <a href="istilah.html"><strong>Mengenal Istilah Keris</strong><span>Arti dhapur, luk, tangguh, dan pamor.</span></a>
+    <a href="cara-pesan.html"><strong>Cara Pesan</strong><span>Langkah memesan lewat WhatsApp.</span></a>
+  </div>
+</section>
+
+<section id="faq" class="seksi">
+  <h2>Pertanyaan Umum</h2>
+  <details><summary>Apakah keris yang dijual asli?</summary><p>Setiap keris dilengkapi keterangan dhapur, luk, tangguh, dan pamor. Penjual siap menjelaskan asal-usul dan kondisi bilah melalui chat.</p></details>
+  <details><summary>Bagaimana cara merawat keris?</summary><p>Simpan di tempat kering, bersihkan dengan minyak khusus (warangan dan minyak cendana), dan hindari menyentuh bilah dengan tangan basah.</p></details>
+  <details><summary>Apakah bisa dikirim ke luar kota?</summary><p>Bisa. Keris dikemas aman dan dikirim lewat ekspedisi. Ongkos kirim dibahas saat konfirmasi.</p></details>
+</section>
+</main>
+
+<footer id="kontak" class="footer">
+  <h2>Kontak</h2>
+  <p>WhatsApp: <a href="#" id="link-wa">+62 812-3456-7890</a></p>
+  <p>Alamat: Jl. Contoh No. 1, Surakarta</p>
+  <p>Jam operasional: Senin–Sabtu, 09.00–17.00 WIB</p>
+  <small>&copy; 2026 Pusaka Nusantara</small>
+</footer>
+
+<a id="bar-wa" class="bar-wa" href="#" target="_blank" rel="noopener">Tanya via WhatsApp</a>
+
+<dialog id="modal" aria-labelledby="modal-judul">
+  <div id="modal-isi"></div>
+</dialog>
+
+<dialog id="zoom" aria-label="Foto keris diperbesar">
+  <button class="tutup" aria-label="Tutup foto">&times;</button>
+  <img id="zoom-img" alt="">
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
